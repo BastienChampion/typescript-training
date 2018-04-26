@@ -5,11 +5,11 @@ describe('let declarations', () => {
   it('can be used in place of `var`', () => {
     // Declare musician using 'let'
 
-    let musician: 'John Lennon';
+  let musician = 'John Lennon';
 
     // Declare isDead using 'let'
 
-    let isDead: true;
+  let isDead = true;
 
     expect(musician).toBe('John Lennon')
     expect(isDead).toBe(true)
@@ -58,16 +58,16 @@ describe('let declarations', () => {
     // replace dots (...) below with appropriate `let` statements to make expectations pass
     // NESTED BLOCK STATEMENTS
     // let...
-    let message: 'John';
+    let message = 'John';
 
     expect(message).toBe('John')
     {
       // let...
-      let message: 'Lennon';
+      let message = 'Lennon';
       expect(message).toBe('Lennon')
       {
         // let...
-        let message: 'died';
+        let message = 'died';
         expect(message).toBe('died')
       }
       expect(message).toBe('Lennon')

@@ -148,7 +148,7 @@ describe('class', () => {
     // - it will add this band to the list of musician's bands'. How to store them?
 
     class Musician {
-      private bands: [string];
+      private bands = [];
 
       constructor() {
 

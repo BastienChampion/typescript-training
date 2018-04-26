@@ -15,11 +15,12 @@ describe('let declarations', () => {
     expect(isDead).toBe(true)
   })
 
-  it('can modify the value of a `let` variable', () => {
+  fit('can modify the value of a `let` variable', () => {
     // Delcare 'releaseName' using 'let', setting the value to 'ES6'
-    // let releaseName = 'ES6';
+    let releaseName;
+    releaseName = 'ES6';
     // Change value of releaseName to be `ES2015`, the new name for ES6
-    let releaseName = 'ES2015';
+    releaseName = 'ES2015';
 
     expect(releaseName).toBe('ES2015')
   })

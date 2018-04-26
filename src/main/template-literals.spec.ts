@@ -60,7 +60,7 @@ describe('Template literals', () => {
     }
   })
 
-  fit('can be curried', () => {
+  it('can be curried', () => {
     // Using tagged template strings, write journey function
     // that will accept following 3 template strings
     // and return a string describing the journey

@@ -15,7 +15,7 @@ describe('let declarations', () => {
     expect(isDead).toBe(true)
   })
 
-  fit('can modify the value of a `let` variable', () => {
+  it('can modify the value of a `let` variable', () => {
     // Delcare 'releaseName' using 'let', setting the value to 'ES6'
     let releaseName;
     releaseName = 'ES6';

@@ -10,9 +10,14 @@ describe('enhanced object literals', () => {
         // name: name,
         // dead: dead,
         // wantsToPlayWith: function (target){
-        //   return `${this.name} wants to play with ${target.name} ${target.dead ? 'but he is' : 'and he is not'} dead`;
+        // return `${this.name} wants to play with ${target.name} ${target.dead ? 'but he is' : 'and he is not'} dead`;
         // }
         // - do that in ES6 !
+        name,
+        dead,
+        wantsToPlayWith(target){
+          return `${name} wants to play with ${target.name} ${target.dead ? 'but he is' : 'and he is not'} dead`;
+        }
       }
     }
 

@@ -43,11 +43,12 @@ describe('default parameters', () => {
   it('can default all arguments, optionally', () => {
     // Modify the method signature of `myFunction` to allow for all args to be optional
 
-    function myFunction({name, age, favoriteBand}) {
+    function myFunction({name = 'Toufik', age = 25, favoriteBand = 'NTM'} = {}) {
       expect(name).toBeDefined()
       expect(age).toBeDefined()
       expect(favoriteBand).toBeDefined()
-    }
+    
+  }
 
     myFunction({name: 'John', age: 40, favoriteBand: 'The Beatles'})
     myFunction({name: 'John', age: 40})
